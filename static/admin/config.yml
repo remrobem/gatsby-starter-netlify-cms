@@ -11,6 +11,8 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+publish_mode: editorial_workflow
+
 collections:
   - name: "blog"
     label: "Blog"
@@ -29,6 +31,7 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    create: true
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
