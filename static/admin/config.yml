@@ -10,8 +10,9 @@ backend:
 
 media_folder: static/img
 public_folder: /img
-
 publish_mode: editorial_workflow
+# only for dev
+local_backend: true
 
 collections:
   - name: "blog"
@@ -31,6 +32,7 @@ collections:
 
   - name: "pages"
     label: "Pages"
+    folder: "src/pages/page"
     create: true
     files:
       - file: "src/pages/index.md"
